@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "peer": "^0.2.8",
+    "connect": "^2.30.2"
+  }
+}

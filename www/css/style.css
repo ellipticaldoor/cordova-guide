@@ -1,0 +1,53 @@
+/* general
+__________________________________________________________________________ */
+
+*,
+*:before,
+*:after
+{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	margin: 0;
+}
+
+.noselect
+{
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+
+	-webkit-touch-callout: none;
+	 -khtml-user-select: none;
+}
+
+
+/* typography
+__________________________________________________________________________ */
+
+body,
+textarea,
+input
+{
+	word-wrap: break-word;
+
+	color: #302129;
+	background-color: #fff;
+
+	font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+	font-size: 115%;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+* { font-weight: normal; }
+strong { font-weight: bold; }
+
+a
+{
+	text-decoration: none;
+	color: #4446f4;
+}
