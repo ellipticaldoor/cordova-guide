@@ -1,4 +1,4 @@
-function startTransmitter() {
+$(document).ready(function() {
 	navigator.getUserMedia = ( navigator.getUserMedia ||
 					   navigator.webkitGetUserMedia ||
 					   navigator.mozGetUserMedia ||
@@ -21,7 +21,7 @@ function startTransmitter() {
 
 			var l = getLocation(document.URL);
 
-			// console.log(l.hostname);
+			console.log(l.hostname);
 
 			peer = new Peer('transmitter', {host: '192.168.1.40', port: 9999, path: '/'});
 			peer.on('open', function(id) {
@@ -43,4 +43,4 @@ function startTransmitter() {
 			console.log("error: " + err);
 		}
 	);
-}
+})

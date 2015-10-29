@@ -1,0 +1,121 @@
+/* general
+__________________________________________________________________________ */
+
+*,
+*:before,
+*:after
+{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	margin: 0;
+}
+
+.noselect
+{
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+
+	-webkit-touch-callout: none;
+	 -khtml-user-select: none;
+}
+
+
+/* typography
+__________________________________________________________________________ */
+
+body,
+textarea,
+input
+{
+	word-wrap: break-word;
+
+	color: #302129;
+	background-color: #fff;
+
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 145%;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+* { font-weight: normal; }
+strong { font-weight: bold; }
+
+a
+{
+	text-decoration: none;
+	color: #f4449e;
+}
+
+a:hover { text-decoration: underline; }
+
+a:visited { color: #9744f4; }
+
+p { margin: .9em .3em; }
+
+
+/* defaults
+__________________________________________________________________________ */
+
+section { overflow: auto; }
+
+hr {
+	height: 1px;
+
+	border: 0;
+	background: #07ffff;
+}
+
+img {
+	width: 100%;
+
+	border-radius: 2px;
+}
+
+
+/* generics
+__________________________________________________________________________ */
+
+@-webkit-keyframes bg_change {
+	0% { background-color: #f4449e; }
+	100% { background-color: #9744f4; }
+}
+
+@-ms-keyframes bg_change {
+	0% { background-color: #f4449e; }
+	100% { background-color: #9744f4; }
+}
+
+@keyframes bg_change {
+	0% { background-color: #f4449e; }
+	100% { background-color: #9744f4; }
+}
+
+#loading
+{
+	overflow: auto;
+
+	width: 78px;
+	margin: 0 auto;
+}
+
+#loading div
+{
+	float: left;
+
+	width: 15px;
+	height: 15px;
+	margin: 0 3px 0 3px;
+
+	-webkit-animation: bg_change .5s infinite alternate;
+		-ms-animation: bg_change .5s infinite alternate;
+			animation: bg_change .5s infinite alternate;
+
+	border-radius: 100px;
+	background-color: #9744f4;
+}

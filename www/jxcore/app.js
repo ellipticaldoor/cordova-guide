@@ -23,8 +23,8 @@ clog('peerjs server listening on port 9999');
 
 
 // Starts an http-server server
-var connect = require('connect'),
-directory = './static/';
+// var connect = require('connect'),
+// directory = path.join(__dirname, "static");
 
-connect().use(connect.static(directory)).listen(8888);
-clog('http server listening on port 8888');
+// connect().use(connect.static(directory)).listen(8888);
+// clog('http server listening on port 8888');

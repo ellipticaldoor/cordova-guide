@@ -13,20 +13,31 @@
 		<link href="css/style.css" rel="stylesheet">
 
 		<script src="cordova.js"></script>
-		<!--<script src="js/lib/ios-websocket-hack.js"></script>-->
+		<!-- <script src="js/lib/ios-websocket-hack.js"></script> -->
 
 		<script src="js/lib/zepto_1.1.6.min.js"></script>
 		<script src="js/lib/peer_0.3.14.min.js"></script>
 
 		<script src="js/transmitter.js"></script>
-		<script src="js/index.js"></script>
+		<script src="js/receiver.js"></script>
+		<script src="js/global.js"></script>
 	</head>
 <body>
 	<br>
 	<div class="app"><h1>Guide - Transmitter</h1></div>
 
-	<h3 id='id'>connecting…</h3>
-	<audio controls></audio>
+<!-- 	<h3 id='id'>connecting…</h3>
+	<audio controls></audio> -->
+
+	<div>
+		<h1><a href="/">receiver</a></h1>
+		<h3 id='connection'>No Connection To Peer</h3>
+	</div>
+	<div>
+		<br>
+		<h4>Peers Audio</h4>
+		<audio controls id='peer-audio'></audio>
+	</div>
 
 	<p>Ip Addresses:</p>
 	<ul data-role="listview" id='ipaddrs' data-inset="true"></ul>

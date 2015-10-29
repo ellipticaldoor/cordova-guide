@@ -87,6 +87,7 @@ var app = {
 		}
 
 		// startTransmitter();
+		// startReceiver();
 	}
 };
 
