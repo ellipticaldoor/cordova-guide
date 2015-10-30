@@ -21,9 +21,7 @@ $(document).ready(function() {
 
 			var l = getLocation(document.URL);
 
-			console.log(l.hostname);
-
-			peer = new Peer('transmitter', {host: '192.168.1.40', port: 9999, path: '/'});
+			peer = new Peer('transmitter', {host: l.hostname, port: 9999, path: '/'});
 			peer.on('open', function(id) {
 				$('#id').text('you are connected');
 			});

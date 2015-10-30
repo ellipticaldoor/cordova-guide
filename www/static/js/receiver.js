@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 	var l = getLocation(document.URL);
 
-	peer = new Peer({host: '192.168.1.40', port: 9999, path: '/'});
+	peer = new Peer({host: l.hostname, port: 9999, path: '/'});
 
 	peer.on('open', function(id) {
 		$('#connection').text('calling...');

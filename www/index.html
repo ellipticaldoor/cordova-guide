@@ -19,8 +19,10 @@
 		<script src="js/lib/peer_0.3.14.min.js"></script>
 
 		<script src="js/httpd_server.js"></script>
+		<!--
 		<script src="js/receiver.js"></script>
 		<script src="js/transmitter.js"></script>
+		-->
 		<script src="js/global.js"></script>
 	</head>
 <body onload="onLoad()">
@@ -30,7 +32,7 @@
 	<h3 id='id'>connecting…</h3>
 	<audio controls></audio> -->
 
-	<div>
+<!-- 	<div>
 		<h1><a href="/">receiver</a></h1>
 		<h3 id='connection'>No Connection To Peer</h3>
 	</div>
@@ -38,13 +40,9 @@
 		<br>
 		<h4>Peers Audio</h4>
 		<audio controls id='peer-audio'></audio>
-	</div>
+	</div> -->
 
-	<button onclick="startServer('htdocs');">Start Httpd at www/htdocs</button>
-
-	<div id='location'></div>
 	<div id='url'></div>
-	<div id='localpath'></div>
 
 	<p>Ip Addresses:</p>
 	<ul data-role="listview" id='ipaddrs' data-inset="true"></ul>

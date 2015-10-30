@@ -8,18 +8,18 @@ function onDeviceReady() {
 	startServer("static");
 }
 function updateStatus() {
-	document.getElementById('location').innerHTML = "document.location.href: " + document.location.href;
+	//document.getElementById('location').innerHTML = "document.location.href: " + document.location.href;
 	if( httpd ) {
 		httpd.getURL(function(url){
 			if(url.length > 0) {
-				document.getElementById('url').innerHTML = "server is up: <a href='" + url + "' target='_blank'>" + url + "</a>";
+				document.getElementById('url').innerHTML = "<a href='" + url + "' target='_blank'>" + url + "</a>";
 			} else {
 				document.getElementById('url').innerHTML = "server is down.";
 			}
 		});
-		httpd.getLocalPath(function(path){
-			document.getElementById('localpath').innerHTML = "<br/>localPath: " + path;
-		});
+		// httpd.getLocalPath(function(path){
+		// 	document.getElementById('localpath').innerHTML = "<br/>localPath: " + path;
+		// });
 	} else {
 		alert('CorHttpd plugin not available/ready.');
 	}
