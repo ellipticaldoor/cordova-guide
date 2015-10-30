@@ -3,23 +3,23 @@ var clog = require('./utilities').log;
 
 
 // Gets all device ip addresses
-var os = require('os');
-var net = os.networkInterfaces();
+// var os = require('os');
+// var net = os.networkInterfaces();
 
-for (var ifc in net) {
-	var addrs = net[ifc];
-	for (var a in addrs) {
-		if (addrs[a].family == "IPv4") {
-			Mobile('addIp').call(addrs[a].address);
-		}
-	}
-}
+// for (var ifc in net) {
+// 	var addrs = net[ifc];
+// 	for (var a in addrs) {
+// 		if (addrs[a].family == "IPv4") {
+// 			Mobile('addIp').call(addrs[a].address);
+// 		}
+// 	}
+// }
 
 
 // Starts a peerjs server
 var PeerServer = require('peer').PeerServer;
 var server_1 = PeerServer({port: 9999, path: '/'});
-clog('peerjs server listening on port 9999');
+clog('peerjs server started');
 
 
 // Starts an http-server server
