@@ -2,10 +2,10 @@
 <widget id="com.guide.guide" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Guide</name>
 	<description>
-		A sample Apache Cordova application that responds to the deviceready event.
+		Guide.
 	</description>
-	<author email="dev@cordova.apache.org" href="http://cordova.io">
-		Apache Cordova Team
+	<author email="dortamiguel@gmail.com" href="https://github.com/ellipticaldoor/">
+		Guide
 	</author>
 	<content src="index.html" />
 	<plugin name="cordova-plugin-whitelist" version="1" />
@@ -21,11 +21,13 @@
 		<preference name="android-minSdkVersion" value="14" />
 		<preference name="android-targetSdkVersion" value="22" />
 
-<!-- 		<config-file target="AndroidManifest.xml" parent="/*">
+	<!--
+ 	<config-file target="AndroidManifest.xml" parent="/*">
 			<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 			<uses-permission android:name="android.permission.RECORD_AUDIO" />
 			<uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
-		</config-file> -->
+	</config-file>
+	-->
 	</platform>
 	<platform name="ios">
 		<allow-intent href="itms:*" />
