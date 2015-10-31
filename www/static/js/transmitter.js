@@ -23,7 +23,10 @@ $(document).ready(function() {
 
 			peer = new Peer('transmitter', {host: l.hostname, port: 9999, path: '/'});
 			peer.on('open', function(id) {
-				$('#id').text('you are connected');
+				$('#id').text('Streaming audio');
+				$('#listen_msg').css('display', 'list-item');
+				document.getElementById('txt').innerHTML += '<li>Share the qrcode at the bottom or go to <a href="http://' + l.hostname  + ':8888">http://' + l.hostname + ':8888</a></li>';
+				$('#qrcode').css('display', 'block');
 			});
 
 			peer.on('connection', function(conn) {

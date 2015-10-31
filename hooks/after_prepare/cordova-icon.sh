@@ -1,2 +1,3 @@
 #!/bin/bash
-cordova-icon
+# cordova-icon
+# cordova-splash
