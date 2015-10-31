@@ -21,7 +21,7 @@ var app = {
 	jxcore: function() {
 		function log(x) {
 			var txt = document.getElementById('txt');
-			if (txt) txt.innerHTML += "<BR/>" + x;
+			if (txt) txt.innerHTML += '<li>' + x + '</li>';
 		}
 
 		var inter = setInterval(function() {

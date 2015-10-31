@@ -12,9 +12,10 @@ function updateStatus() {
 	if( httpd ) {
 		httpd.getURL(function(url){
 			if(url.length > 0) {
-				document.getElementById('url').innerHTML = "<a href='" + url + "' target='_blank'>" + url + "</a>";
+				document.getElementById('txt').innerHTML += '<li>http server started at <a href="' + url + '">' + url + '</li>';
+				document.getElementById('transmitter_link').href = url + '/transmitter.html';
 			} else {
-				document.getElementById('url').innerHTML = "server is down.";
+				document.getElementById('txt').innerHTML += '<li>server is down</li>';
 			}
 		});
 		// httpd.getLocalPath(function(path){

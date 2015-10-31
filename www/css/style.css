@@ -19,7 +19,7 @@ __________________________________________________________________________ */
 			user-select: none;
 
 	-webkit-touch-callout: none;
-	 -khtml-user-select: none;
+	-khtml-user-select: none;
 }
 
 
@@ -30,24 +30,74 @@ body,
 textarea,
 input
 {
+	font-family: -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+	font-size: 115%;
+
 	word-wrap: break-word;
 
 	color: #302129;
-	background-color: #fff;
-
-	font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-	font-size: 115%;
+	background-color: #ebebeb;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 }
-
-* { font-weight: normal; }
-strong { font-weight: bold; }
-
+	
 a
 {
 	text-decoration: none;
+
 	color: #4446f4;
+}
+
+
+/* app
+__________________________________________________________________________ */
+
+#txt
+{
+	width: calc(100vw - 2em);
+	max-width: 500px;
+	margin: 2.5em auto;
+
+	border: 1px solid #63c5c4;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+ul { padding: 1em 2em;}
+li { padding: .2em 0em .2em 0em;}
+
+
+.button_container
+{
+
+	width: 100vw;
+
+	text-align: center;
+}
+
+.button_container img
+{
+	display: block;
+
+	width: 50vw;
+	max-width: 300px;
+	margin: 1.5em auto;	
+}
+
+.button
+{
+	font-size: 125%;
+
+	width: 40px;
+	max-width: 300px;
+
+	padding: 10px 20px;
+
+	text-decoration: none;
+
+	color: #fff;
+	border-radius: 8px;
+	background: #fa6262;
 }

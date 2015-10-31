@@ -7,7 +7,8 @@
 		<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'">
 
 		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+		<link rel="icon" href="static/img/mic-icon.png">
 		<title>Guide</title>
 
 		<link href="css/style.css" rel="stylesheet">
@@ -21,8 +22,11 @@
 		<script src="js/global.js"></script>
 	</head>
 <body onload="onLoad()">
-	<div id='url'></div>
+	<div class="button_container">
+		<img src="static/img/mic-icon.png">
+		<a id="transmitter_link" class="button" href="#">open transmitter</a>
+	</div>
 
-	<p id='txt'></p>
+	<ul id='txt'></ul>
 </body>
 </html>
