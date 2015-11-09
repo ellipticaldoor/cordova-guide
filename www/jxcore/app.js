@@ -17,9 +17,9 @@ var clog = require('./utilities').log;
 
 
 // Starts a peerjs server
-// var PeerServer = require('peer').PeerServer;
-// var server_1 = PeerServer({port: 9999, path: '/'});
-// // clog('peer server started at 9999');
+var PeerServer = require('peer').PeerServer;
+var server_1 = PeerServer({port: 9999, path: '/'});
+// clog('peer server started at 9999');
 
 
 // // Starts an http-server server

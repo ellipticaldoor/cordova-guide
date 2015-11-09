@@ -13,8 +13,8 @@ function updateStatus() {
 		httpd.getURL(function(url){
 			if(url.length > 0) {
 				// document.getElementById('txt').innerHTML += '<li>http server started at <a href="' + url + '">' + url + '</li>';
-				document.getElementById('txt').innerHTML += '<li>Transmitter can be opened in other device in the same network at <a href="' + url + '/transmitter.html">' + url + '/transmitter.html</li>';
-				document.getElementById('transmitter_link').href = url + '/transmitter.html';
+				document.getElementById('txt').innerHTML += '<li>Transmitter can be opened in other device in the same network at <a href="' + url + '/transmitter.html">' + url + '/guide.html</li>';
+				document.getElementById('transmitter_link').href = url + '/guide.html';
 			} else {
 				document.getElementById('txt').innerHTML += '<li>server is down</li>';
 			}
