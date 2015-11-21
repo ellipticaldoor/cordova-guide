@@ -24,13 +24,17 @@
 		<allow-intent href="market:*" />
 		<preference name="android-minSdkVersion" value="14" />
 		<preference name="android-targetSdkVersion" value="23" />
-		<!--
-			<config-file target="AndroidManifest.xml" parent="/*">
-				<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-				<uses-permission android:name="android.permission.RECORD_AUDIO" />
-				<uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+		
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+			<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+			<uses-permission android:name="android.permission.CAMERA" />
+			<uses-permission android:name="android.permission.RECORD_AUDIO" />
 		</config-file>
-		-->
+		
 	</platform>
 	<platform name="ios">
 		<allow-intent href="itms:*" />
