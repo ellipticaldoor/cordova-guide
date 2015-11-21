@@ -17,3 +17,4 @@ platforms/platforms.json
 plugins/fetch.json
 
 io.jxcore.node/
+io.jxcore.node.jx/
