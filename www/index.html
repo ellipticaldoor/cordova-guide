@@ -13,6 +13,10 @@
 
 		<script src="cordova.js"></script>
 
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-orange.min.css" />
+		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 		<link href="static/css/style.css" rel="stylesheet">
 
 		<script src="static/js/lib/zepto_1.1.6.min.js"></script>
@@ -22,21 +26,42 @@
 		<script src="static/js/global.js"></script>
 	</head>
 <body onload="onLoad()">
-	<ul id="txt">
-		<li id="id">Trying to connect</li>
-		<li id="listen_msg">Press play for listening the audio streaming</li>
-	</ul>
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">Home</span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Options</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="#">Home</a>
+				<a class="mdl-navigation__link" href="#">Stream</a>
+				<a class="mdl-navigation__link" href="#">Wifi Hotspot</a>
+				<a class="mdl-navigation__link" href="#">Howto</a>
+			</nav>
+		</div>
+		<main class="mdl-layout__content">
+			<div class="page-content">
+				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+					<div class="content_container">
+						<ul id="txt">
+							<li id="id">Trying to connect</li>
+							<li id="listen_msg">Press play for listening the audio streaming</li>
+						</ul>
 
-	<audio controls></audio>
+						<audio controls></audio>
 
-	<div id="qrcode"></div>
-
-	<div class="button_container">
-		<img src="static/img/mic-icon.png">
-		<a id="transmitter_link" class="button" href="#">Open Vsit - Guide</a>
+						<div id="qrcode"></div>
+					</div>
+				</div>
+			</div>
+		</main>
 	</div>
-
-	<ul id='txt'></ul>
 
 	<script src="static/js/lib/zepto_1.1.6.min.js"></script>
 	<script src="static/js/lib/peer_0.3.14.min.js"></script>

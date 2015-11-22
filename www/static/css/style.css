@@ -6,7 +6,7 @@ __________________________________________________________________________ */
 *:after
 {
 	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
 			box-sizing: border-box;
 	margin: 0;
 }
@@ -14,7 +14,7 @@ __________________________________________________________________________ */
 .noselect
 {
 	-webkit-user-select: none;
-	   -moz-user-select: none;
+		 -moz-user-select: none;
 		-ms-user-select: none;
 			user-select: none;
 
@@ -30,9 +30,6 @@ body,
 textarea,
 input
 {
-	font-family: -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
-	font-size: 115%;
-
 	word-wrap: break-word;
 
 	color: #302129;
@@ -54,32 +51,6 @@ a
 /* nav
 __________________________________________________________________________ */
 
-nav
-{
-	line-height: 3em;
-
-	z-index: 9999;
-	left: 0;
-
-	width: 100%;
-	height: 3em;
-	padding: 0 13px 0 13px;
-
-	border-bottom: 1px solid #d7d7d7;
-	background-color: rgba(255,255,255,.85);
-	font-weight: bold;
-}
-
-nav img
-{
-	float: left;
-
-	height: 2.4em;
-	margin: .3em;
-	margin-right: .8em;
-}
-
-
 audio
 {
 	display: block;
@@ -93,12 +64,13 @@ __________________________________________________________________________ */
 
 #txt
 {
-	width: calc(100vw - 2em);
+	width: 100%;
 	max-width: 500px;
 	margin: 1em auto;
+	font-size: 1em;
 
 	border: 1px solid #63c5c4;
-	border-radius: 4px;
+	border-radius: 1px;
 	background-color: #fff;
 }
 
@@ -153,4 +125,39 @@ __________________________________________________________________________ */
 {
 	max-width: 100%;
 	margin: 0 auto;
+}
+
+.content_container {
+	width: 100%;
+}
+
+/* material
+__________________________________________________________________________ */
+
+.page-content {
+	padding: 0.25em 1em 0 1em;
+}
+
+div.mdl-layout__header-row {
+    color: #ffffff;
+}
+
+i.material-icons {
+    color: #ffffff;
+}
+.demo-card-wide.mdl-card {
+	padding: 1em;
+	padding-bottom: 2em;
+	width: 100%;
+	max-width: 512px;
+	min-height: 0;
+	margin: 1em auto;
+}
+
+.demo-card-wide > .mdl-card__title {
+	color: #fff;
+	height: 50px;
+}
+.demo-card-wide > .mdl-card__menu {
+	color: #fff;
 }
