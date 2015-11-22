@@ -11,5 +11,7 @@ cordova platform add android
 cordova-icon
 cordova-splash
 cordova build android
+cd $DIR/jxcore/
+jx install --autoremove ".*,*.md,*.MD"
 cordova run android --device
 ```
