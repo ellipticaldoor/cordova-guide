@@ -22,11 +22,24 @@
 		<script src="js/global.js"></script>
 	</head>
 <body onload="onLoad()">
+	<ul id="txt">
+		<li id="id">Trying to connect</li>
+		<li id="listen_msg">Press play for listening the audio streaming</li>
+	</ul>
+
+	<audio controls></audio>
+
+	<div id="qrcode"></div>
+
 	<div class="button_container">
 		<img src="static/img/mic-icon.png">
 		<a id="transmitter_link" class="button" href="#">Open Vsit - Guide</a>
 	</div>
 
 	<ul id='txt'></ul>
+
+	<script src="static/js/lib/zepto_1.1.6.min.js"></script>
+	<script src="static/js/lib/peer_0.3.14.min.js"></script>
+	<script src="static/js/transmitter.js"></script>
 </body>
 </html>
