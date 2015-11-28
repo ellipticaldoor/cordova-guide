@@ -39,7 +39,7 @@ input
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 }
-	
+
 a
 {
 	text-decoration: none;
@@ -160,4 +160,12 @@ i.material-icons {
 }
 .demo-card-wide > .mdl-card__menu {
 	color: #fff;
+}
+
+
+/* UI
+__________________________________________________________________________ */
+
+.app_content {
+	/*display: none;*/
 }

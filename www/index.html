@@ -13,8 +13,8 @@
 
 		<script src="cordova.js"></script>
 
-		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-orange.min.css" />
-		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+		<link rel="stylesheet" href="static/css/material.orange-pink.min.css" />
+		<script src="static/js/lib/material.min.js"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 		<link href="static/css/style.css" rel="stylesheet">
@@ -23,6 +23,7 @@
 		<script src="static/js/lib/peer_0.3.14.min.js"></script>
 
 		<script src="static/js/httpd_server.js"></script>
+		<script src="static/js/ui.js"></script>
 		<script src="static/js/global.js"></script>
 	</head>
 <body onload="onLoad()">
@@ -39,13 +40,26 @@
 		<div class="mdl-layout__drawer">
 			<span class="mdl-layout-title">Options</span>
 			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="#">Home</a>
-				<a class="mdl-navigation__link" href="#">Stream</a>
-				<a class="mdl-navigation__link" href="#">Wifi Hotspot</a>
-				<a class="mdl-navigation__link" href="#">Howto</a>
+				<a id="home_link" class="mdl-navigation__link" href="#">Home</a>
+				<a id="stream_link" class="mdl-navigation__link" href="#">Stream</a>
+				<a id="hotspot_link" class="mdl-navigation__link" href="#">Wifi Hotspot</a>
+				<a id="howto_link" class="mdl-navigation__link" href="#">Howto</a>
 			</nav>
 		</div>
-		<main class="mdl-layout__content">
+
+		<main id="home_content" class="mdl-layout__content app_content">
+			<div class="page-content">
+				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+					<div class="content_container">
+						<p>
+							Hola :)
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<main id="stream_content" class="mdl-layout__content app_content">
 			<div class="page-content">
 				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 					<div class="content_container">
@@ -57,6 +71,30 @@
 						<audio controls></audio>
 
 						<div id="qrcode"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<main id="hotspot_content" class="mdl-layout__content app_content">
+			<div class="page-content">
+				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+					<div class="content_container">
+						<p>
+							wifiiiii
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<main id="howto_content" class="mdl-layout__content app_content">
+			<div class="page-content">
+				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+					<div class="content_container">
+						<p>
+							how??????
+						</p>
 					</div>
 				</div>
 			</div>

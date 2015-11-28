@@ -8,6 +8,7 @@ var app = {
 	},
 
 	onDeviceReady: function() {
+		console.log('hoola');
 		app.receivedEvent('deviceready');
 		app.jxcore();
 	},
