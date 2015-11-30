@@ -20,9 +20,10 @@ function setUI() {
 
 	// other
 	var title = document.getElementById('title');
+	var get_started = document.getElementById('get_started');
 
 	// Initiate UI
-	home_content.style.display = 'block';
+	stream_content.style.display = 'block';
 	$( '.mdl-layout__drawer-button, .material-icons' ).addClass( 'noselect' );
 
   home_link.addEventListener('click', function() {
@@ -38,6 +39,13 @@ function setUI() {
     stream_content.style.display = 'block';
 		title.innerHTML = 'Stream';
   });
+
+	get_started.addEventListener('click', function() {
+		current_content = 'stream_link';
+		hide_content();
+		stream_content.style.display = 'block';
+		title.innerHTML = 'Stream';
+	});
 
   hotspot_link.addEventListener('click', function() {
   	current_content = 'hotspot_link';

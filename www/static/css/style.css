@@ -163,6 +163,15 @@ i.material-icons {
 	color: #fff;
 }
 
+.mdl-navigation__link {
+	font-size: 110%;
+}
+
+a.mdl-navigation__link {
+    padding-left: 100px;
+}
+
+
 
 /* UI
 __________________________________________________________________________ */

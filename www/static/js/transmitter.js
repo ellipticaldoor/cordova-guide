@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function startTransmitter() {
 	navigator.getUserMedia = ( navigator.getUserMedia ||
 					   navigator.webkitGetUserMedia ||
 					   navigator.mozGetUserMedia ||
@@ -45,4 +45,4 @@ $(document).ready(function() {
 			console.log("error: " + err);
 		}
 	);
-})
+}
