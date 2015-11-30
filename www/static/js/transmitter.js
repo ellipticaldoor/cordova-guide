@@ -13,11 +13,12 @@ function startTransmitter() {
 		// successCallback
 		function(_stream) {
 			stream = _stream;
-			var getLocation = function(href) {
-				var l = document.createElement("a");
-				l.href = href;
-				return l;
-			};
+
+			// var getLocation = function(href) {
+			// 	var l = document.createElement("a");
+			// 	l.href = href;
+			// 	return l;
+			// };
 
 			// var l = getLocation(document.URL);
 			// peer = new Peer('transmitter', {host: l.hostname, port: 9999, path: '/'});

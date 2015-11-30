@@ -45,6 +45,7 @@ function setUI() {
 			audio_control.style.display = 'none';
 			$('#id_streaming').text('Please, check first if the phone is connected to a wifi network or you started your own hotspot.');
 			qrcode_container.style.display = 'none';
+			peer.destroy();
 		}
 	});
 
