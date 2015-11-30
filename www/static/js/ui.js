@@ -10,19 +10,20 @@ function setUI() {
   var home_link = document.getElementById('home_link');
   var stream_link = document.getElementById('stream_link');
   var hotspot_link = document.getElementById('hotspot_link');
-  var howto_link = document.getElementById('howto_link');
+  var help_link = document.getElementById('help_link');
 
   // content variables
   var home_content = document.getElementById('home_content');
   var stream_content = document.getElementById('stream_content');
   var hotspot_content = document.getElementById('hotspot_content');
-  var howto_content = document.getElementById('howto_content');
+  var help_content = document.getElementById('help_content');
 
 	// other
 	var title = document.getElementById('title');
 
-	// Initiate app
+	// Initiate UI
 	home_content.style.display = 'block';
+	$( '.mdl-layout__drawer-button, .material-icons' ).addClass( 'noselect' );
 
   home_link.addEventListener('click', function() {
   	current_content = 'home_link';
@@ -45,18 +46,18 @@ function setUI() {
 		title.innerHTML = 'Wifi Hotspot';
   });
 
-  howto_link.addEventListener('click', function() {
-  	current_content = 'howto_link';
+  help_link.addEventListener('click', function() {
+  	current_content = 'help_link';
   	hide_content();
-    howto_content.style.display = 'block';
-		title.innerHTML = 'Howto';
+    help_content.style.display = 'block';
+		title.innerHTML = 'Help';
   });
 
   function hide_content() {
     home_content.style.display = 'none';
     stream_content.style.display = 'none';
     hotspot_content.style.display = 'none';
-    howto_content.style.display = 'none';
+    help_content.style.display = 'none';
 
 		$( '.mdl-layout__drawer, .mdl-layout__obfuscator' ).removeClass( 'is-visible' );
   }

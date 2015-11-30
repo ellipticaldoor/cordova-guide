@@ -14,17 +14,17 @@
 		<script src="cordova.js"></script>
 
 		<link rel="stylesheet" href="static/css/material.orange-pink.min.css" />
-		<script src="static/js/lib/material.min.js"></script>
 
 		<link href="static/fonts/material_icons.css" rel="stylesheet">
 		<link href="static/css/style.css" rel="stylesheet">
 
+		<script src="static/js/lib/material.min.js"></script>
 		<script src="static/js/lib/zepto_1.1.6.min.js"></script>
 		<script src="static/js/lib/peer_0.3.14.min.js"></script>
 
 		<script src="static/js/httpd_server.js"></script>
 		<script src="static/js/ui.js"></script>
-		<script src="static/js/global.js"></script>
+		<!-- <script src="static/js/global.js"></script> -->
 	</head>
 <body onload="onLoad()">
 	<!-- Always shows a header, even in smaller screens. -->
@@ -43,18 +43,24 @@
 				<a id="home_link" class="mdl-navigation__link" href="#">Home</a>
 				<a id="stream_link" class="mdl-navigation__link" href="#">Stream</a>
 				<a id="hotspot_link" class="mdl-navigation__link" href="#">Wifi Hotspot</a>
-				<a id="howto_link" class="mdl-navigation__link" href="#">Howto</a>
+				<a id="help_link" class="mdl-navigation__link" href="#">Help</a>
 			</nav>
 		</div>
 
 		<main id="home_content" class="mdl-layout__content app_content">
 			<div class="page-content">
 				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-					<div class="content_container">
-						<p>
-							Hola :)
-						</p>
-					</div>
+				  <div class="mdl-card__title">
+				    <h2 class="mdl-card__title-text">Welcome</h2>
+				  </div>
+				  <div class="mdl-card__supporting-text">
+				    Vsit is an app for creating and sharing local audio emissions. Please, before getting started with the streaming, make sure that your network is properly configured cheching the info on the menu.
+				  </div>
+				  <div class="mdl-card__actions mdl-card--border">
+				    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+				      Get Started
+				    </a>
+				  </div>
 				</div>
 			</div>
 		</main>
@@ -88,12 +94,12 @@
 			</div>
 		</main>
 
-		<main id="howto_content" class="mdl-layout__content app_content">
+		<main id="help_content" class="mdl-layout__content app_content">
 			<div class="page-content">
 				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 					<div class="content_container">
 						<p>
-							how??????
+							help??????
 						</p>
 					</div>
 				</div>
@@ -103,6 +109,6 @@
 
 	<script src="static/js/lib/zepto_1.1.6.min.js"></script>
 	<script src="static/js/lib/peer_0.3.14.min.js"></script>
-	<script src="static/js/transmitter.js"></script>
+	<!-- <script src="static/js/transmitter.js"></script> -->
 </body>
 </html>
