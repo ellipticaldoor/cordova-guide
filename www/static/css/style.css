@@ -9,10 +9,7 @@ __________________________________________________________________________ */
 		 -moz-box-sizing: border-box;
 			box-sizing: border-box;
 	margin: 0;
-}
 
-.noselect
-{
 	-webkit-user-select: none;
 		 -moz-user-select: none;
 		-ms-user-select: none;
@@ -178,4 +175,12 @@ __________________________________________________________________________ */
 
 .app_content {
 	display: none;
+}
+
+#network_ip {
+	display: none;
+}
+
+.divider {
+	height: 20px;
 }

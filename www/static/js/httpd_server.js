@@ -14,7 +14,7 @@ function updateStatus() {
 			if(url.length > 0) {
 				// document.getElementById('txt').innerHTML += '<li>http server started at <a href="' + url + '">' + url + '</li>';
 				document.getElementById('txt').innerHTML += '<li>Transmitter can be opened in other device in the same network at <a href="' + url + '/transmitter.html">' + url + '/guide.html</li>';
-				document.getElementById('transmitter_link').href = url + '/guide.html';
+				document.getElementById('network_ip').innerHTML = url.substring(7).slice(0, -5);
 			} else {
 				document.getElementById('txt').innerHTML += '<li>server is down</li>';
 			}
@@ -42,7 +42,7 @@ function startServer( wwwroot ) {
 					document.getElementById('url').innerHTML = 'failed to start server: ' + error;
 				});
 			}
-			
+
 		},function(){});
 	} else {
 		alert('CorHttpd plugin not available/ready.');

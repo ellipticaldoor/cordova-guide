@@ -19,10 +19,11 @@ function startTransmitter() {
 				return l;
 			};
 
-			var l = getLocation(document.URL);
-
+			// var l = getLocation(document.URL);
 			// peer = new Peer('transmitter', {host: l.hostname, port: 9999, path: '/'});
-			peer = new Peer('transmitter', {host: "192.168.1.37", port: 9999, path: '/'});
+
+			local_ip = document.getElementById('network_ip').innerHTML;
+			peer = new Peer('transmitter', {host: local_ip, port: 9999, path: '/'});
 			peer.on('open', function(id) {
 				$('#id').text('Streaming audio');
 				$('#listen_msg').css('display', 'list-item');

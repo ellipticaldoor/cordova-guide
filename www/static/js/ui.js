@@ -21,6 +21,24 @@ function setUI() {
 	// other
 	var title = document.getElementById('title');
 	var get_started = document.getElementById('get_started');
+	var start_streaming = document.getElementById('start_streaming');
+	var streamingNow = false;
+
+	start_streaming.addEventListener('click', function() {
+		if (streamingNow == false) {
+			startTransmitter();
+			streamingNow = true;
+			start_streaming.innerHTML = "Stop streaming";
+			$( '#start_streaming' ).removeClass( 'mdl-button--accent' );
+			$( '#start_streaming' ).addClass( 'mdl-button--colored' );
+		}
+		else {
+			streamingNow = false;
+			start_streaming.innerHTML = "Start streaming";
+			$( '#start_streaming' ).removeClass( 'mdl-button--colored' );
+			$( '#start_streaming' ).addClass( 'mdl-button--accent' );
+		}
+	});
 
 	// Initiate UI
 	stream_content.style.display = 'block';

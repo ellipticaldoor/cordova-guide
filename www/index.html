@@ -25,7 +25,7 @@
 		<script src="static/js/httpd_server.js"></script>
 		<script src="static/js/transmitter.js"></script>
 		<script src="static/js/ui.js"></script>
-		<!-- <script src="static/js/global.js"></script> -->
+		<script src="static/js/global.js"></script>
 	</head>
 <body onload="onLoad()">
 	<!-- Always shows a header, even in smaller screens. -->
@@ -70,6 +70,7 @@
 			<div class="page-content">
 				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 					<div class="content_container">
+						<span id="network_ip"></span>
 						<ul id="txt">
 							<li id="id">Trying to connect</li>
 							<li id="listen_msg">Press play for listening the audio streaming</li>
@@ -78,6 +79,12 @@
 						<audio controls></audio>
 
 						<div id="qrcode"></div>
+
+						<div class="divider"></div>
+
+						<button id="start_streaming" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+						  Start streaming
+						</button>
 					</div>
 				</div>
 			</div>
@@ -87,8 +94,8 @@
 			<div class="page-content">
 				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 					<div class="content_container">
-						<p>If you don´t have a wifi network were you and your users can join to connect to the audio streaming you can create a Wifi Hotspot.</p>
-						<p>Maybe you don´t want to share your internet so don´t forget to turn off the data before</p>
+						<p>If you don´t have a wifi network, were you and your users can join to connect to the audio streaming, you can create a Wifi Hotspot.</p>
+						<p>Maybe you don´t want to share your internet, so don´t forget to turn off the data before starting a new Wifi network from your phone.</p>
 					</div>
 				</div>
 			</div>
