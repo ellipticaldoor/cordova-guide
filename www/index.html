@@ -13,7 +13,7 @@
 
 		<script src="cordova.js"></script>
 
-		<link rel="stylesheet" href="static/css/material.orange-pink.min.css" />
+		<link rel="stylesheet" href="static/css/material.blue_grey-orange.min.css" />
 
 		<link href="static/fonts/material_icons.css" rel="stylesheet">
 		<link href="static/css/style.css" rel="stylesheet">
@@ -71,20 +71,19 @@
 				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 					<div class="content_container">
 						<span id="network_ip"></span>
-						<ul id="txt">
-							<li id="id">Trying to connect</li>
-							<li id="listen_msg">Press play for listening the audio streaming</li>
-						</ul>
-
-						<audio controls></audio>
-
-						<div id="qrcode"></div>
-
-						<div class="divider"></div>
-
 						<button id="start_streaming" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
 						  Start streaming
 						</button>
+
+						<ul id="txt">
+							<li id="id_streaming">Please, check first if the phone is connected to a wifi network or started your own hotspot.</li>
+						</ul>
+
+						<div class="divider"></div>
+
+						<audio id="audio_control" controls></audio>
+
+						<div id="qrcode"></div>
 					</div>
 				</div>
 			</div>

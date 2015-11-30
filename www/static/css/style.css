@@ -66,8 +66,8 @@ __________________________________________________________________________ */
 	margin: 1em auto;
 	font-size: 1em;
 
-	border: 1px solid #63c5c4;
-	border-radius: 1px;
+	border: 1px solid #607d8b;
+	border-radius: 2px;
 	background-color: #fff;
 }
 
@@ -182,5 +182,9 @@ __________________________________________________________________________ */
 }
 
 .divider {
-	height: 20px;
+	height: 25px;
+}
+
+#audio_control {
+	display: none;
 }
