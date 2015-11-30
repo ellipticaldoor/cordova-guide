@@ -26,7 +26,7 @@ function startTransmitter() {
 			local_ip = document.getElementById('network_ip').innerHTML;
 			peer = new Peer('transmitter', {host: local_ip, port: 9999, path: '/'});
 			peer.on('open', function(id) {
-				document.getElementById('txt').innerHTML += '<li>Share the qrcode at the bottom or go to <a href="http://' + l.hostname  + ':8888">http://' + l.hostname + ':8888</a></li>';
+				// document.getElementById('txt').innerHTML += '<li>Share the qrcode at the bottom or go to <a href="http://' + l.hostname  + ':8888">http://' + l.hostname + ':8888</a></li>';
 				$('#qrcode').css('display', 'block');
 			});
 
