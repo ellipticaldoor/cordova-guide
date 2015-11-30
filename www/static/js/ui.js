@@ -50,7 +50,7 @@ function setUI() {
 	});
 
 	// Initiate UI
-	hotspot_content.style.display = 'block';
+	home_content.style.display = 'block';
 	$( '.mdl-layout__drawer-button, .material-icons' ).addClass( 'noselect' );
 
   home_link.addEventListener('click', function() {
