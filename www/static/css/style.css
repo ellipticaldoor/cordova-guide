@@ -114,8 +114,9 @@ __________________________________________________________________________ */
 
 #listen_msg { display: none; }
 
+#qrcode_container { display: none;}
+
 #qrcode {
-	display: none;
 	margin: 1.5em;
 }
 
@@ -123,10 +124,19 @@ __________________________________________________________________________ */
 {
 	max-width: 100%;
 	margin: 0 auto;
+	max-height: 36vh;
 }
 
 .content_container {
 	width: 100%;
+}
+
+#url_info {
+	padding-top: 1.5em;
+	font-size: 1em;
+	font-family: monospace;
+	margin: 0 auto;
+	text-align: center;
 }
 
 

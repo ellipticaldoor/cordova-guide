@@ -23,6 +23,7 @@
 		<script src="static/js/lib/peer_0.3.14.min.js"></script>
 
 		<script src="static/js/httpd_server.js"></script>
+		<script src="static/js/lib/qrcode.min.js"></script>
 		<script src="static/js/transmitter.js"></script>
 		<script src="static/js/ui.js"></script>
 		<script src="static/js/global.js"></script>
@@ -55,7 +56,7 @@
 				    <h2 class="mdl-card__title-text">Welcome</h2>
 				  </div>
 				  <div class="mdl-card__supporting-text">
-						<p>Vsit is an app for creating and sharing local audio emissions. Please, before getting started with the streaming, make sure that your network is properly configured. Chek-it on the options of the menu.</p>
+						<p>Vsit is an app for creating and sharing local audio emissions. Please, before getting started with the streaming, make sure that your network is properly configured. Chek it on the options of the menu.</p>
 				  </div>
 				  <div class="mdl-card__actions mdl-card--border">
 				    <a id="get_started" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -81,7 +82,10 @@
 
 						<audio id="audio_control" controls></audio>
 
-						<div id="qrcode"></div>
+						<div id="qrcode_container">
+							<div id="url_info"></div>
+							<div id="qrcode"></div>
+						</div>
 					</div>
 				</div>
 			</div>

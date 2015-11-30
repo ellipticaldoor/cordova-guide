@@ -24,6 +24,7 @@ function setUI() {
 	var start_streaming = document.getElementById('start_streaming');
 	var streamingNow = false;
 	var audio_control = document.getElementById('audio_control');
+	var qrcode_container = document.getElementById('qrcode_container');
 
 	start_streaming.addEventListener('click', function() {
 		if (streamingNow == false) {
@@ -34,6 +35,7 @@ function setUI() {
 			$( '#start_streaming' ).addClass( 'mdl-button--colored' );
 			audio_control.style.display = 'block';
 			$('#id_streaming').text('Streaming audio');
+			qrcode_container.style.display = 'block';
 		}
 		else {
 			streamingNow = false;
@@ -42,6 +44,7 @@ function setUI() {
 			$( '#start_streaming' ).addClass( 'mdl-button--accent' );
 			audio_control.style.display = 'none';
 			$('#id_streaming').text('Please, check first if the phone is connected to a wifi network or you started your own hotspot.');
+			qrcode_container.style.display = 'none';
 		}
 	});
 
