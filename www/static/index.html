@@ -7,16 +7,44 @@
 	<meta name="keywords" content="tourism, guide">
 	<meta name="theme-color" content="#63c5c4">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="img/mic-icon-300.png">
+	<!-- <link rel="icon" href="img/mic-icon-300.png"> -->
+	<link rel="stylesheet" href="css/material.blue-orange.min.css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
 </head>
 <body>
-	<ul id="txt">
-		<li id="connection">No connection to peer server</li>
-		<li id="listen_msg">Press play for listening the audio streaming</li>
-	</ul>
-	
-	<audio controls id='peer-audio'></audio>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span id="title" class="mdl-layout-title">Vsit - Tourist</span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+			</div>
+		</header>
+
+		<main id="guide_content" class="mdl-layout__content">
+			<div class="page-content">
+				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+					<div class="content_container">
+						<ul id="txt">
+							<li id="connection">No connection to peer server</li>
+							<li id="listen_msg">Press play for listening the audio streaming</li>
+						</ul>
+
+						<audio controls id='peer-audio'></audio>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="mdl-card__actions mdl-card--border">
+						<button onClick="history.go(0)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+						  Reload
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
 
 	<script src="js/lib/zepto_1.1.6.min.js"></script>
 	<script src="js/lib/peer_0.3.14.min.js"></script>
