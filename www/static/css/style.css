@@ -66,9 +66,10 @@ __________________________________________________________________________ */
 	margin: 1em auto;
 	font-size: 1em;
 
-	border: 1px solid #607d8b;
-	border-radius: 2px;
-	background-color: #fff;
+	color: rgba(0, 0, 0, 0.541176);
+
+	/*border: 1px solid #607d8b;
+	border-radius: 2px;*/
 }
 
 ul { padding: 1em 2em;}
@@ -128,6 +129,7 @@ __________________________________________________________________________ */
 	width: 100%;
 }
 
+
 /* material
 __________________________________________________________________________ */
 
@@ -153,7 +155,7 @@ i.material-icons {
 
 .demo-card-wide > .mdl-card__title {
 	color: #fff;
-	height: 176px;
+	height: 125px;
 	background: url('../img/welcome.png') center / cover;
 }
 .demo-card-wide > .mdl-card__menu {
@@ -168,7 +170,14 @@ a.mdl-navigation__link {
     padding-left: 100px;
 }
 
+div.mdl-card__supporting-text p {
+    font-size: 120%;
+}
 
+.mdl-card__supporting-text {
+	padding: 1em;
+	width: 100%;
+}
 
 /* UI
 __________________________________________________________________________ */
@@ -182,7 +191,7 @@ __________________________________________________________________________ */
 }
 
 .divider {
-	height: 25px;
+	height: 15px;
 }
 
 #audio_control {

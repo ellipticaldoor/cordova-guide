@@ -41,7 +41,7 @@ function setUI() {
 			$( '#start_streaming' ).removeClass( 'mdl-button--colored' );
 			$( '#start_streaming' ).addClass( 'mdl-button--accent' );
 			audio_control.style.display = 'none';
-			$('#id_streaming').text('Please, check first if the phone is connected to a wifi network or started your own hotspot.');
+			$('#id_streaming').text('Please, check first if the phone is connected to a wifi network or you started your own hotspot.');
 		}
 	});
 
