@@ -151,11 +151,11 @@ __________________________________________________________________________ */
 }
 
 div.mdl-layout__header-row {
-    color: #ffffff;
+	color: #ffffff;
 }
 
 i.material-icons {
-    color: #ffffff;
+	color: #ffffff;
 }
 .demo-card-wide.mdl-card {
 	padding: 1em;
@@ -180,11 +180,11 @@ i.material-icons {
 }
 
 a.mdl-navigation__link {
-    padding-left: 100px;
+	padding-left: 100px;
 }
 
 div.mdl-card__supporting-text p {
-    font-size: 120%;
+	font-size: 120%;
 }
 
 .mdl-card__supporting-text {
@@ -194,6 +194,14 @@ div.mdl-card__supporting-text p {
 
 /* UI
 __________________________________________________________________________ */
+
+#app_container {
+	display: none;
+}
+
+#form_container {
+	display: none;
+}
 
 .app_content {
 	display: none;
